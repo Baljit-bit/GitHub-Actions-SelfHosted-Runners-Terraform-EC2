@@ -1,9 +1,9 @@
-name: My First GitHub Actions
+name: GitHub Actions with Terraform
 
 on: [push]
 
 jobs:
-  build:
+  terraform:
     runs-on: self-hosted
 
     strategy:
