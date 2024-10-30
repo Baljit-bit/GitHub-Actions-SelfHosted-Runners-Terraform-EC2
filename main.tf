@@ -32,7 +32,7 @@ resource "aws_security_group" "sg_terraform" {
     }
     
     tags = {
-      Name = "sg_terraform"
+      Name = "sg_terraform_github_actions"
     }
 }
 
