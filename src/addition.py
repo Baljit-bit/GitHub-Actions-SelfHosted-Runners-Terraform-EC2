@@ -1,23 +1,8 @@
-from flask import Flask, render_template_string
+# app.py
+# This is a test commit
+def add(a, b):
+    return a + b
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template_string('''
-        <!doctype html>
-        <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>Simple Flask Application</title>
-        </head>
-        <body>
-            <h1>Hello, World!</h1>
-            <p>This is a simple Flask application!</p>
-        </body>
-        </html>
-    ''')
-
-if __name__ == '__main__':
-    app.run(debug=True)
+def test_add():
+    assert add(1, 2) == 3
+    assert add(1, -1) == 0
