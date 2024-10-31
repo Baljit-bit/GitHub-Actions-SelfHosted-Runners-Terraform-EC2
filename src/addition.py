@@ -10,7 +10,7 @@ def home():
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>Simple Flask App</title>
+            <title>Simple Flask Application</title>
         </head>
         <body>
             <h1>Hello, World!</h1>
