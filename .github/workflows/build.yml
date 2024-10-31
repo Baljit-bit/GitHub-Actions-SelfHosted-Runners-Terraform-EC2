@@ -3,7 +3,7 @@ name: GitHub Actions with Terraform
 on: [push]
 
 jobs:
-  terraform:
+  build:
     runs-on: self-hosted
 
     strategy:
