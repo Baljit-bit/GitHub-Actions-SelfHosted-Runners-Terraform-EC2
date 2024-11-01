@@ -7,7 +7,7 @@ def add(a, b):
 
 @app.route('/')
 def home():
-    result = add(3, 5)  # Example values; you can modify this as needed
+    result = add(3, 5)  # Example values
     return render_template_string("<h1>The result of addition is: {{ result }}</h1>", result=result)
 
 if __name__ == "__main__":
