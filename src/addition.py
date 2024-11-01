@@ -1,3 +1,7 @@
+from flask import Flask, render_template_string
+
+app = Flask(__name__)
+
 def add(a, b):
     return a + b
 
