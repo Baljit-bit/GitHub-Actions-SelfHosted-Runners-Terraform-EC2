@@ -24,6 +24,12 @@ resource "aws_security_group" "sg_terraform" {
         protocol    = "tcp"
         cidr_blocks = ["0.0.0.0/0"]  # Allow SSH from anywhere (can be restricted)
     }
+    ingress {
+        from_port   = 5000
+        to_port     = 5000
+        protocol    = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]  # Allow SSH from anywhere (can be restricted)
+    }
     egress {
         from_port   = 0
         to_port     = 0
