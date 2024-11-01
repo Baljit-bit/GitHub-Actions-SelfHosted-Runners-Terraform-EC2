@@ -5,8 +5,10 @@ app = Flask(__name__)
 def add(a, b):
     return a + b
 
+@app.route('/')
+def home():
+    result = add(3, 5)  # Example values; you can modify this as needed
+    return render_template_string("<h1>The result of addition is: {{ result }}</h1>", result=result)
+
 if __name__ == "__main__":
-    # Example usage
-    result = add(3, 5)
-    print(f"The result of addition is: {result}")
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)  # Expose the app to all interfaces
